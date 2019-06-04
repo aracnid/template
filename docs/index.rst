@@ -5,9 +5,6 @@
 
 .. include:: ../README.rst
 
-Another Section
-====================================
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:

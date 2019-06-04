@@ -1,1 +1,4 @@
-# Template from .rst
+Project "template" Documentation
+================================
+
+Interesting text goes here.
