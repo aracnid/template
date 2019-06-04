@@ -6,6 +6,9 @@
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = .
+
+# The build directory is contained in a separate documentation repository
+# that contains a "gh-pages" branch to publish on GitHub
 BUILDDIR      = ../../template-docs
 
 # Put it first so that "make" without argument is like "make help".
