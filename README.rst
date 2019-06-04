@@ -1,1 +1,1 @@
-# Template
+# Template from .rst
