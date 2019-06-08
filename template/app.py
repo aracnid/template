@@ -2,6 +2,10 @@ import os
 import json
 import logging
 import logging.config
+from dotenv import load_dotenv
+
+# setup dotenv
+load_dotenv()
 
 # setup logging
 logging_filename = 'logging_config.json'
@@ -15,4 +19,4 @@ logging.config.dictConfig(config)
 logger = logging.getLogger()
 
 if __name__ == '__main__':
-	logger.info('Hello, World!')
+	logger.info('The meaning of life: {}'.format(os.environ.get('MEANING_OF_LIFE')))
