@@ -56,7 +56,13 @@ web: gunicorn app:app --log-file -
 
 ### 6. Deploy the app to Heroku
 
-Using the Heroku CLI, create a new Heroku app and deploy it.
+Using the Heroku CLI, create a new Heroku app and deploy it. 
+
+The `PATH` variable should include the path to the Heroku CLI. If it is missing, add it.
+
+```bash
+$ export PATH="$PATH:/c/program files/heroku/bin"
+```
 
 ```bash
 $ heroku create TEMPLATE
