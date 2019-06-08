@@ -78,6 +78,14 @@ $ touch .nojekyll
 $ git commit -am "add .nojekyll"
 ```
 
+### 7. View the docs on GitHub Pages
+
+The documents can be viewed on GitHub pages at the following URL:
+
+```
+https://<profile>.github.io/TEMPLATE/
+```
+
 ## Workflow
 
 * From the project repository:
