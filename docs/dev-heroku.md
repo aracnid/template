@@ -51,10 +51,12 @@ $ pip freeze > requirements.txt
 Create a file named `Procfile` in the root directory of the project repository. Add the following line to the file:
 
 ```
-web: gunicorn app:app --log-file -
+web: gunicorn TEMPLATE.app:app --log-file -
 ```
 
-### 6. Deploy the app to Heroku
+### 6. Create the Heroku app
+
+Using the Heroku CLI, create a new Heroku app. The name of the Heroku app must be unique.
 
 Using the Heroku CLI, create a new Heroku app and deploy it. 
 
@@ -65,14 +67,27 @@ $ export PATH="$PATH:/c/program files/heroku/bin"
 ```
 
 ```bash
-$ heroku create TEMPLATE
+$ heroku create HEROKU_APP_NAME
+```
+
+### 6. Deploy the app to Heroku
+
+```bash
 $ git push heroku master
 $ heroku open
 ```
 
+The `heroku open` command will open a new browser tab for the Flask application at: `https://HEROKU_APP_NAME.herokuapp.com/`.
+
 ## Workflow
 
-N/A
+* Push the committed changes to Heroku
+* Verify that it works.
+
+```bash
+$ git push heroku master
+$ heroku open
+```
 
 ## Directory Structure
 
