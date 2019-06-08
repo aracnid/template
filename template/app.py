@@ -2,6 +2,7 @@ import os
 import json
 import logging
 import logging.config
+import pkg_resources
 
 # setup logging
 logging_filename = 'logging_config.json'
@@ -14,6 +15,9 @@ with open(logging_fullpath, 'rt') as f:
 logging.config.dictConfig(config)
 logger = logging.getLogger()
 
+def main():
+	return 'Hello, World!'
 
 if __name__ == '__main__':
-	logger.info('Hello, World!')
+	logger.info(main())
+	version = pkg_resources.required('Template')[0].version
